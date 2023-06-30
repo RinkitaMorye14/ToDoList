@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color: rgb(129, 129, 221);
+}
+
+.content{
+    width: 100%;
+    max-width: 70vw;
+    background-color: aliceblue;
+    margin: 5vh auto  3vh;
+    padding: 4vh 3vw 3vh;
+    border-radius:1rem ;
+
+}
+h2{
+    text-align: center;
+    margin-top: 10vh;
+    color: #edeef0;
+}
+
+.ip{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #edeef0;
+    border-radius: 3rem;
+    padding-left: 2rem;
+}
+
+input{
+    border: none;
+    outline: none;
+    background: transparent;
+    /* padding: 1rem; */
+    font-size: 1rem;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 1rem 1rem;
+    background-color: blueviolet;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 4rem;
+}
+.task_content{
+    width: 100%;
+    max-width: 70vw;
+    background-color: aliceblue;
+    margin: 2vh auto;
+    padding: 1vh 3vw 1vh;
+    border-radius:1rem ;
+}
+.task_content .row{
+    width:100%;
+    display: flex;
+    background-color: #edeef0;
+    justify-content: space-between;
+    padding: 1rem 1rem 0;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+.task_content .row .txt_tsk{
+    overflow: hidden;
+    width:fit-content
+}
+.task_content .row:hover{
+    background-color: #edeef0;
+    padding: 1rem 1rem 0.3rem;
+    box-shadow: 0.1rem 0.2rem 0.5rem rgb(150, 143, 143);
+    transition: all ease 0.2s;
+}
+.task_content .row .txt{
+    position: relative;
+    max-width: 25rem;
+    padding-top: 0.01rem;
+    height:2rem;
+    max-height: fit-content;
+}
+i{
+    cursor: pointer;
+}
+.error{
+    animation: shake 0.2s linear 10;
+}
+
+@keyframes shake{
+    0%{transform:translateX(0);}
+    25%{transform:translateX(-3px);}
+    50%{transform:translateX(0);}
+    75%{transform:translateX(4px);}
+    100%{transform:translateX(0);}
+}
